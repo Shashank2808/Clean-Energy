@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+function formvalidate()
+{
+var y=document.getElementById("name").value;
+var z=y.toLowerCase;
+        var pat=/[a-z]{1,30}/;
+        var c=pat.test(z);
+        if(c==false)
+        {
+            alert("wrong name input");
+            return false;
+        }
+var y=document.getElementById("mobile").value;
+pat=/[0-9]{10}/;
+c=pat.test(y);
+if(c==false)
+        {
+            alert("wrong mobile input");
+            return false;
+        }
+var y=document.getElementById("email").value;
+pat=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+c=pat.test(y);
+if(c==false)
+        {
+            alert("wrong email input");
+            return false;
+        }
+var pas1=document.getElementById("password").value;
+var pas2=document.getElementById("retype").value;
+if(pas1!=pas2)
+    {
+        alert(" both password should be same");
+    }
+}
+</script>
+<style type="text/css">
+    #login
+    {
+
+    height: 100vh;
+    width: 100%;
+    background-image: url(sign.jpg);
+    background-size: cover;
+    }
+#form
+    {
+        height: 200px;
+        width: 100px;
+        position: relative;
+        top:40%;
+        left:20%;
+  }
+input,button
+    {
+        color:white;
+        background: none;
+        border: none;
+        border-bottom: 2px solid white;
+        padding 50px;
+        margin:20px; 
+        font-family: cursive;
+        position: relative;
+        left: 350px;
+        top:-150px;
+        text-transform: uppercase;
+        opacity: 1;
+    }
+#login_heading
+    {
+       position: relative;
+       top:-200px;
+       left:350px;
+       color: white;
+       font-size: 40px;
+       font-family: cursive;
+       width:30ch;
+       text-shadow: 0 0 10px green, 0 0 20px green, 0 0 30px green, 0 0 40px green, 0 0 50px green, 0 0 60px green, 0 0 70px green;
+       opacity: 1;
+    }
+button
+    {
+    background:none;
+    font-family: cursive;
+    color: white;
+    background: 2px solid white;
+    border-radius: 40%;
+    position: relative;
+    left: 405px;
+    }
+</style>
+</head>
+<body>
+   
+<div id="login">'
+<form id="form" onsubmit="return formvalidate()" action="google.com">    
+<div id="login_heading" >SIGN UP FORM</div>
+<br>
+<input type="text" placeholder="NAME" id="name">
+<input type="text" placeholder="MOBILE_NUMBER" id="mobile"> 
+<input type="text" placeholder="EMAIL" id="email">
+<input type="password" placeholder="PASSWORD" id="password">
+<input type="password" placeholder="RETYPEPASSWORD" id="retype">
+<button type ="submit" value="submit">SUBMIT</button>
+</form>    
+</div>
+
+</body>
+</html>
+
+
