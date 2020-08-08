@@ -1,0 +1,24 @@
+.img1{
+	width:900px;
+	height:400px;
+	filter: blur(1px);
+}
+/*h2{
+	*position:relative;
+	color:black;
+	top:50px;
+	left:70px;*
+}*/
+.content{
+	font-family: 'Oswald', sans-serif;
+	color:blue;
+	text-decoration: underline;
+}
+body{
+	font-family: 'Rubik', sans-serif;
+	font-size:20px;
+	margin :0% 20%;
+}
+h2{
+	font-family: 'Oswald', sans-serif;
+}

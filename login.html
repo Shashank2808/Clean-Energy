@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+    #login
+    {
+
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://images.pexels.com/photos/1438994/pexels-photo-1438994.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    }
+#form
+    {
+        height: 200px;
+        width: 100px;
+        position: relative;
+        top:40%;
+        left:20%;
+  }
+input,button
+    {
+        color:white;
+        background: none;
+        border: 1px solid white;
+        padding 50px;
+        margin:20px; 
+        font-family: cursive;
+        position: relative;
+        left: 350px;
+        top:-150px;
+        text-transform: uppercase;
+        opacity: 1;
+    }
+#login_heading
+    {
+       position: relative;
+       top:-200px;
+       left:350px;
+       color: white;
+       font-size: 40px;
+       font-family: times new roman;
+       width:30ch;
+       text-shadow: 0 0 10px blue, 0 0 20px blue, 0 0 30px green, 0 0 40px green, 0 0 50px blue, 0 0 60px blue, 0 0 70px blue;
+       opacity: 1;
+    }
+button
+    {
+    background-color:black;
+    font-family: times new roman;
+    color: white;
+    background: 2px solid white;
+    border-radius: 35%;
+     text-shadow: 0 0 10px blue, 0 0 20px blue, 0 0 30px green, 0 0 40px green, 0 0 50px blue, 0 0 60px blue, 0 0 70px blue;
+
+        left: 405px;
+    }
+</style>
+</head>
+<body>
+   
+<div id="login">'
+<form id="form" onsubmit="return formvalidate()" action="/portal" method="post">    
+<div id="login_heading" >LOGIN FORM</div>
+<br>
+<input type="text" placeholder="EMAIL" id="email" name="email1">
+<input type="password" placeholder="PASSWORD" id="password" name="password1">
+<button type ="submit" value="submit">SUBMIT</button>
+</form>    
+</div>
+
+</body>
+</html>
+
+
