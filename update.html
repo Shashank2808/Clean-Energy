@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<title>Login</title> 
+<meta chartset='utf-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+body
+    {   background-image:url("updatewala2.jpg");
+        padding : 0px;
+        margin: 0px;
+        font-family:sans-serif;
+        font-size-adjust: auto;
+    }
+#about
+    {
+        
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+    }
+#heading:hover
+    {
+            transform:rotateY(360deg);
+            transform: rotateX(360deg);
+    }
+#content
+    {
+        color:white;
+        font-size:25px;
+        position: relative;
+        left:40%;
+        top:30%;
+        width:50%;
+        height:70%;
+        text-align: justify;
+        overflow-y: hidden;
+        z-index: 100;
+    }
+.form1
+    {
+        border:solid black 2px;
+         border-radius: 10%;
+        
+        
+        text-transform: uppercase;
+        color:black;
+        font-size: 20px;
+        font-style: italic;
+    }
+#user1
+    {   color:black;
+        z-index: 2;
+    }
+#user
+    {   font-family: times new roman;  
+         color:grey;
+
+        position: relative;
+        left:-240px;
+        z-index: 2;
+    }
+#user3
+    { font-family:times new roman;  
+         color:grey;   
+        border-radius: 10%;
+        position: relative;
+        left:-240px;
+        z-index: 2;
+    }
+.form2
+    {   font-family:times new roman;  
+        color:black;
+        background-color: #87B6A7;
+        border-radius: 10%;
+        border-bottom:solid blue 2px;
+        z-index:-2;
+    }
+#home
+    {
+        position: relative;
+        top:5px;
+        left:500px;
+    }
+
+ label{
+           
+    }
+</style>
+    <script>
+    $(document).ready(function()
+    {
+        $("#user1").focus(function()
+                         {
+            $(this).css("border-bottom","2px blue solid");
+            
+            $("#user").animate(
+                {
+                    top:'-30px',
+                    fontSize:'15px'
+                });
+        });
+        $("#user1").blur(function()
+                         {
+             $(this).css("border-bottom","2px white solid");
+            
+        });
+        $("#user2").blur(function()
+                         {
+             $(this).css("border-bottom","2px white solid");
+            
+        });
+        $("#user2").focus(function()
+                         {
+            $(this).css("border-bottom","2px blue solid");
+            $("#user3").animate(
+                {
+                    top:'-30px',
+                    fontSize:'15px'
+                });
+        });
+    }                  
+    );
+    </script>
+</head>
+<body>
+<div id="about">   
+    <div id="heading">UPDATE</div>
+<div id="content">
+<form action="/updation" method="post">
+    <br>
+    <br>
+<input type="text" name="username1" class="form1" id="user1">
+<label for="username1" id="user">Username</label>
+    <br>
+    <br>
+<input type="password"  name="password1" class="form1" id="user2">
+<label for="password1" id="user3">Password</label>
+<br>
+<br>
+<input type="submit" value="Log In" class="form2">
+</form>
+
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>
