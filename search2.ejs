@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<style>
+    body
+    {
+        background-image:url("searchwala.jpg");
+    }
+div{
+  font-size: 30px;
+  color: white;
+  }
+.card
+    {
+        height: 600px;
+        width: 450px;
+        border: 2px #000000 solid;
+        border-radius: 20px;
+        background-color:black;
+        opacity:0.5;
+        position:relative;
+        left:500px;
+        top:10px;
+        opacity: 0.9;
+        box-shadow: 2px 2px 7px 7px white;
+    }
+img
+    {
+        height:52%;
+        width:90%;
+        position: relative;
+        left:5%;
+        top:5px;
+        opacity: 1;
+        border-radius: 10%;
+    }
+    h1{
+        text-align: center;
+    }
+</style>
+
+<body>
+
+<div><h1>SEARCHED USER</h1></div>
+    <div class="card">
+    <img src="./<%= profileData.src %>">
+        <br>
+        <br>
+        <pre>  <%= profileData.name %></pre>
+        <pre>  <%= profileData.mobile %></pre>
+        <pre>  <%= profileData.email %></pre>
+</div>
+</body>
+</html>
